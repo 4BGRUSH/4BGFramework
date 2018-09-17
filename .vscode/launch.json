@@ -15,6 +15,15 @@
             "request": "launch",
             "name": "Launch Client",
             "program": "${workspaceFolder}\\client\\index.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Selected",
+            "program": "${selectedFile}",
+            "args": [
+                
+            ]
         }
     ]
 }

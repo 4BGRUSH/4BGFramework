@@ -1,0 +1,1 @@
+exports.localDb = require('./local');

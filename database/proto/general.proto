@@ -1,0 +1,16 @@
+package fourbg;
+syntax = "proto3";
+
+message TableInfo {
+  int32 created = 1;
+  int32 lastModified = 2;
+  ColumnInfo columnInfo = 3;
+  bool readonly = 4;
+  string createdBy = 5;
+}
+
+message ColumnInfo {
+  int32 nChunks = 1;
+  int32 chunkSize = 2;
+  int32 counter = 3;
+}

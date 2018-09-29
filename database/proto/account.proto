@@ -1,0 +1,13 @@
+package fourbg;
+syntax = "proto3";
+
+// sizeof(Account) = 26
+message Account {
+  int32 Id = 1;         // 4
+  string password = 2;  // 16
+  string name = 3;      // 16
+  int32 created = 4;    // 4
+  int32 lastLogin = 5;  // 4
+  bool deleted = 6;     // 1
+  bool freezed = 7;     // 1
+}

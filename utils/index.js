@@ -1,1 +1,0 @@
-exports.stdoutLog = require('./logger');

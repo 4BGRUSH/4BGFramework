@@ -1,4 +1,4 @@
-const config = {
+export const config = {
     ports: {
         server: 3000,
         database: 3001
@@ -6,5 +6,3 @@ const config = {
 }
 
 Object.freeze(config);
-
-export default config;

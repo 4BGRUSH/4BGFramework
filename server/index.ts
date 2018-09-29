@@ -1,9 +1,8 @@
-const createServer = require('../socket').server.listen;
-const config = require('../config.js');
+import { config } from '../config'
+import { server as srv } from '../socket';
 
 const log = require('../utils').stdoutLog;
-
-let server = createServer(config.ports.server);
+let server = srv.listen(config.ports.server);
 
 server.on('connection', function (socket) {
     log('a user connected');
